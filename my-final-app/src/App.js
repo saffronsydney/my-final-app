@@ -12,7 +12,7 @@ function App() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    fetch('http://www.randyconnolly.com/funwebdev/3rd/api/travel/images.php')
+    fetch('https://www.randyconnolly.com/funwebdev/3rd/api/travel/images.php')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
